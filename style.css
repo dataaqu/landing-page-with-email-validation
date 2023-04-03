@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  overflow-x: hidden;
+}
+
+/* inputs */
+
+input {
+  outline: none;
+}
+
+input[type="email"] {
+  padding: 1.4rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.466667px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.4px;
+  padding: 1.4rem 2.1rem;
+
+  color: #c2c2c2;
+}
+
+.header {
+  margin: 2.4rem 2.4rem 9.8rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #07043b;
+  cursor: pointer;
+}
+
+li:not(:last-child) {
+  margin-right: 1.4rem;
+}
+
+.first__section {
+  margin: 0 2.4rem 9rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first__section img {
+  width: 100%;
+}
+
+.text__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+}
+.first__section h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #07043b;
+}
+
+.first__section p {
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: #07043b;
+}
+
+.input__div {
+  display: flex;
+  flex-direction: column;
+  width: 30.4rem;
+  gap: 1.6rem;
+}
+
+#email {
+  height: 4rem;
+}
+
+#email:active {
+  outline: red;
+}
+
+.btn {
+  height: 4rem;
+  background: #2f65f8;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn:hover {
+  background: #6c9bff;
+}
+
+.second__section {
+  position: relative;
+  background-color: #f8f8fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#desktop {
+  display: none;
+}
+#mobile,
+#desktop {
+  width: 100%;
+  position: absolute;
+  top: -5%;
+}
+.second__img__box {
+  width: 80%;
+  margin: 9.3rem 2.7rem 8.7rem 2.7rem;
+}
+
+.second__img__box img {
+  width: 100%;
+}
+
+.second__text__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32rem;
+}
+
+.second__text__content h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+
+  color: #07043b;
+}
+
+.second__text__content p {
+  text-align: center;
+
+  color: #615f7e;
+}
+
+.anchor {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #3da08f;
+}
+
+.comment__box {
+  background: #ffffff;
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+  border-radius: 3.93258px;
+  width: 28rem;
+  margin-top: 4rem;
+  margin-bottom: 8.2rem;
+}
+
+.box__content {
+  margin: 1rem 1.3rem 1.9rem 2.5rem;
+}
+
+.comment__box p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  /* or 181% */
+
+  letter-spacing: 0.384615px;
+
+  color: #07043b;
+}
+
+.avatar__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.5rem;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.avatar__box img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+
+.person__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.person__name h1 {
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 1.2rem;
+  letter-spacing: 0.45px;
+
+  color: #07043b;
+}
+
+.person__name p {
+  font-size: 6px;
+  line-height: 12px;
+  letter-spacing: 0.3px;
+
+  color: #07043b;
+}
+
+.third__section {
+  background-color: #575988;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.third__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5.4rem 4.8rem 7.1rem 4.8rem;
+  width: 28rem;
+}
+
+.third__content h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.third__content p {
+  text-align: center;
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
+  color: #ffffff;
+}
+
+.input__div2 {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  gap: 1.6rem;
+}
+
+#email2 {
+  height: 3.2rem;
+}
+
+.footer {
+  background-color: #07043b;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content {
+  margin-left: 4rem;
+  padding-top: 6.5rem;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+}
+
+.footer__contact:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.footer__contact p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+
+#fb,
+#twitter,
+#insta,
+#logo {
+  fill: #ffffff;
+}
+
+#fb:hover,
+#twitter:hover,
+#insta:hover {
+  fill: #6c9bff;
+  cursor: pointer;
+}
+
+.first__list li {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+
+.first__list li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.second__list {
+  margin-top: 3.2rem;
+}
+
+.second__list li {
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.second__list li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.footer__social {
+  justify-self: center;
+  margin-top: 3.2rem;
+  margin-bottom: 4.2rem;
+}
+
+#red {
+  display: none;
+  color: red;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+#white {
+  display: none;
+  margin-top: 0;
+  color: white;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin: 6.5rem 8rem 10rem 8rem;
+  }
+
+  li {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  li:not(:last-child) {
+    margin-right: 5.7rem;
+  }
+
+  .first__section {
+    margin: 0 8rem 16.5rem 8rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img__box {
+    width: 50%;
+    height: 120%;
+  }
+
+  .text__content {
+    width: 65rem;
+  }
+
+  .text__content h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: left;
+  }
+
+  .text__content p {
+    text-align: left;
+  }
+
+  .input__div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #email {
+    width: 65%;
+  }
+
+  #btn__submit {
+    width: 30rem;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  #desktop {
+    display: block;
+    top: -10%;
+  }
+
+  .second__section {
+    background: #f8f8fe;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .second__text__content {
+    margin-top: 17.8rem;
+    margin-left: 8rem;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  .second__text__content h1 {
+    font-size: 4rem;
+    line-height: 4.7rem;
+    margin-bottom: 3.8rem;
+  }
+
+  .second__text__content p {
+    width: 53rem;
+    margin-bottom: 1.6rem;
+    text-align: left;
+  }
+
+  .anchor {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #3da08f;
+  }
+
+  .comment__box {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+    border-radius: 3.93258px;
+    width: 35rem;
+    margin-top: 4.5rem;
+    margin-bottom: 10.7rem;
+  }
+
+  .box__content p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    width: 29rem;
+  }
+
+  .avatar__box {
+    width: 14rem;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .avatar__box img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+  }
+  .person__name {
+    width: 11rem;
+  }
+  .person__name h1 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.55px;
+    margin: 0;
+  }
+
+  .person__name p {
+    font-size: 8px;
+    line-height: 15px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .second__img__box {
+    margin-top: 20.2rem;
+    margin-bottom: 17.3rem;
+  }
+  .second__img__box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .third__text {
+    width: 53.3rem;
+    margin-left: 8rem;
+  }
+
+  .third__text h1 {
+    text-align: left;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .third__text p {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .third__content {
+    margin-top: 10rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input__div2 {
+    width: 48rem;
+    margin-right: 12rem;
+  }
+  #email2 {
+    width: 100%;
+    height: 4.8rem;
+  }
+  #btn__submit2 {
+    width: 20rem;
+    height: 4.8rem;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    margin-bottom: 8.6rem;
+    margin-top: 9.2rem;
+  }
+
+  .footer__contact {
+    margin: 0;
+  }
+
+  .first__list {
+    margin: 0;
+  }
+  .second__list {
+    margin: 0;
+  }
+
+  .input__div {
+    position: relative;
+  }
+  #red {
+    position: absolute;
+    top: 120%;
+  }
+}
